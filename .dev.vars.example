@@ -1,0 +1,13 @@
+# Local dev secrets. Copy to .dev.vars (git-ignored) before running `wrangler dev`.
+# In production, set these via:
+#   wrangler secret put GOOGLE_OAUTH_CLIENT_ID
+#   wrangler secret put GOOGLE_OAUTH_CLIENT_SECRET
+#   wrangler secret put MCP_BEARER_TOKEN
+
+# Google OAuth Client (Web application). See docs/SETUP_GCP.md
+GOOGLE_OAUTH_CLIENT_ID=your-client-id.apps.googleusercontent.com
+GOOGLE_OAUTH_CLIENT_SECRET=GOCSPX-your-client-secret
+
+# Random opaque string used as a connector access gate.
+# Generate with: openssl rand -hex 32
+MCP_BEARER_TOKEN=replace-me-with-a-long-random-secret

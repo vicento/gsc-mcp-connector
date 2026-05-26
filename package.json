@@ -1,0 +1,43 @@
+{
+  "name": "gsc-mcp-connector",
+  "version": "0.4.0",
+  "description": "Self-hosted MCP connector for Google Search Console, deployable to Cloudflare Workers in 15 minutes.",
+  "private": false,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@cloudflare/workers-oauth-provider": "^0.4.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "agents": "^0.12.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "typescript": "^5.7.2",
+    "wrangler": "^3.99.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JuJu78/gsc-mcp-connector"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "google-search-console",
+    "gsc",
+    "cloudflare-workers",
+    "seo",
+    "chatgpt",
+    "claude"
+  ],
+  "author": "Julien Gourdon <https://julien-gourdon.fr>"
+}
